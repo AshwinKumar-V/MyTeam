@@ -1,0 +1,172 @@
+@font-face {
+    font-family: Montserrat;
+    src: url('fonts/Montserrat-Regular.ttf');
+}
+@font-face {
+    font-family: Poppins;
+    src: url('fonts/Poppins-Regular.ttf');
+}
+@font-face {
+    font-family: PT Serif;
+    src: url('fonts/PTSerif-Bold.ttf');
+}
+@font-face {
+    font-family: PT Serif -R;
+    src: url('fonts/PTSerif-Regular.ttf');
+}
+
+*{
+    margin:0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background: #FAFAFA;
+}
+
+.content{
+    margin:8% 14%;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    font-family: Poppins;
+    line-height: 27px;
+}
+
+    header h1{
+        font-size: 36px;
+        line-height: 48px;
+        font-family: PT Serif;
+        font-weight: bold;
+        letter-spacing: -0.045em;
+    }
+
+    .who-we-are{
+        width: 40%;
+        padding-left: 10%;
+    }
+
+    .who-we-are h2{
+        font-weight: 640;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+
+    .who-we-are p{
+        margin-top: 3%;
+        font-size: 18px;
+        font-weight: 440;
+    }
+
+footer{
+    padding: 2% 4%;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #BDBDBD;
+    font-family: Montserrat;
+    align-self: center;
+}
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 9% 0 0;
+}
+
+    .item{
+        width:24%;
+        padding:1% 4.5%;
+        position: relative;
+    }
+
+        .item img{
+            width:100%;
+        }
+
+    .name{
+        font-family: Poppins;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 27px;
+        margin-top: 5%;
+    }
+
+    .work{
+        width: fit-content;
+        font-family: PT Serif -R;
+        font-size: 12px;
+        line-height: 16px;
+        text-transform: uppercase;
+        transform: rotate(90deg);
+        transform-origin: 0 0;
+        position: absolute;
+        display: inline;
+        margin-left: 9%;
+        top: -5%;
+    }
+
+    .main :nth-child(3n-1){
+        margin-top: 10%;
+    }
+
+
+@media screen and (max-width:900px){
+    header h1{
+        font-size: 26px;
+    }
+    .who-we-are h2{
+        font-size: 16px;
+    }
+    .who-we-are p{
+        font-size: 14px;
+    }
+    .name{
+        font-size: 14px;
+    }
+
+    .work{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:700px){
+    .content{
+        margin: 8%;
+    }
+
+    header{
+        flex-direction: column;
+    }
+    header h1{
+        margin-top: 8%;
+        font-size: 36px;
+    }
+    .who-we-are{
+        padding: 10% 0;
+        width: 100%;
+    }
+    .who-we-are h2{
+        font-size: 20px;
+    }
+    .who-we-are p{
+        font-size: 18px;
+    }
+
+    .item{
+        width:40%;
+    }
+
+    .item:nth-child(3n-1){
+        margin-top: 0;
+    }
+
+    .item:nth-child(even){
+        margin-top: 15%;
+    }
+}
+
